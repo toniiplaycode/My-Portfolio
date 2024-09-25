@@ -1,19 +1,17 @@
-let links;
 window.addEventListener('scroll', function(e) {
     document.getElementsByTagName('meta')["theme-color"].content = "#003140";
-    links = document.querySelectorAll('.nav-a');
-    links.forEach(function(link) {
-        link.classList.remove('hover-nav'); // Remove hover class (or any hover effect you might have)
-    });
-
-    addHoverAgain()
 })  
 
-  const addHoverAgain = () => {
-    links.forEach(function(link) {
-      link.classList.add('hover-nav'); // Remove hover class (or any hover effect you might have)
-    });
-  }
+// Check if the device has touch events
+function isTouchDevice() {
+  return 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+}
+
+if (isTouchDevice()) {
+  // Add a class to the body to disable hover effects
+  document.body.classList.add('no-hover');
+}
+
 
   var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',

@@ -796,6 +796,13 @@ a{
   padding: 10px;
 }
 
+@media (hover: none) {
+  .hover-nav:hover {
+    color: #ffffff;
+    border: none;   /* Remove border */
+    padding: 10px;
+  }
+}
 
 #small-screen-nav{
   position: fixed;
