@@ -1,0 +1,107 @@
+.landing
+{
+    width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+    max-width: 100%;
+    background: $dark;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+ .img{
+     background: $dark;
+     width: 100%;
+     display: flex;
+    
+     
+ }
+ .container
+ {
+     display: flex;
+     max-width: 100%; 
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     .h1
+     {
+              margin-bottom: 100px;
+             background: #003140;
+             border-radius: 10px;
+             box-shadow: 3px 3px 15px #025872a2, -3px -3px 15px #000000, inset 3px 3px 10px #ffffff10,inset -3px -3px 15px #00000033;
+             color: rgb(255, 255, 255);
+             padding: 20px;
+              padding-left: 10px;
+              padding-right: 15px;
+              text-align: center;
+              line-height: 2.5;
+              a
+              {  margin-left: 8px; 
+                  padding: 8px ;
+                  font-size: 1em;
+                  background: rgb(255, 255, 255);
+                  color: black;
+                  border-radius: 8px 8px ;
+                  box-shadow: -5px -5px 5px #ffffff3d, 5px 5px 10px #00000059 ;
+                  margin-bottom: 100px !important;
+                  
+              }
+              span 
+              {
+                   font-size: 1.2em;
+ 
+              }
+              
+
+         
+         b 
+         {
+             animation: 1.2s cursor infinite ease;
+             
+         }
+         
+     }
+     
+ }
+}
+@keyframes cursor
+{
+    0%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 800px)
+{
+    .landing
+    {
+        min-height: 78vh;
+        max-height: fit-content;
+
+       
+        .img 
+        {
+             img 
+             {
+                  width: 100%;
+                  
+             }
+        }
+        .container
+        {
+            .h1
+            {
+                margin-top: 15%;
+                font-size: 1em;
+            }
+            
+        }
+    }
+}
