@@ -2,7 +2,7 @@ window.addEventListener('scroll', function(e) {
     document.getElementsByTagName('meta')["theme-color"].content = "#003140";
     const links = document.querySelectorAll('.nav-a');
     links.forEach(function(link) {
-        link.classList.remove('hover'); // Remove hover class (or any hover effect you might have)
+        link.classList.remove('hover-nav'); // Remove hover class (or any hover effect you might have)
     });
   })  
   var typed = new Typed('#typed', {
