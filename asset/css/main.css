@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+*{
+  text-decoration: none;
+}
+
 #preloader {
   position: absolute;
   top: 0;
@@ -495,12 +500,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-  -ms-flex-pack: space-evenly;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   list-style: none;
@@ -509,12 +514,11 @@
 
 .about .container .card2 .mainlist .icon {
   margin-top: 20px;
-  margin-right: 10px;
 }
 
 .about .container .card2 .mainlist .sublist {
+  margin-top: 10px;
   list-style: none;
-  margin-left: 20px;
 }
 
 .about .container .card3 {
@@ -716,24 +720,6 @@
   border-radius: 3px;
 }
 
-@media only screen and (max-width: 800px) {
-  .projects {
-    margin-top: 30%;
-  }
-  .projects svg {
-    margin-top: -30%;
-  }
-  .projects .project-card {
-    margin-bottom: 50px;
-    padding: 0 !important;
-  }
-  .projects .project-card img {
-    width: 100%;
-    height: 41vw;
-    margin-bottom: 10px;
-  }
-}
-
 .footer {
   background: #080808;
   text-align: center;
@@ -747,7 +733,6 @@
   color: #1eff00;
 }
 /*# sourceMappingURL=main.css.map */
-
 
 
 #header { 
@@ -778,7 +763,7 @@
   z-index:9;
 }
 
-ul{
+#container ul{
   list-style-type: none;
   margin: 0;
   text-align: right;
@@ -889,35 +874,12 @@ h1 span{
 }
 
 @media (max-width: 500px){
-  full-ul{
-    display: none;
-  }
-  
   #full-ul{
-    display: none;
+    display: flex;
+    justify-content: center;
   }
-  
-  ul{
-    line-height: 40px;
-  }
-  
-  li{
-    display: block;
-    border-bottom: 1px solid #333;
-  }
-  
-  a:hover{
-    border: none;
-  }
-  
-  #nav-icon{
-    display: inline;
-    cursor: pointer;
-  }
-}
 
-
-
+} 
 
 
 .text {
