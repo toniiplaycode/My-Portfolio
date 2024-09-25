@@ -639,7 +639,7 @@
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-  padding: 5px 10px;
+  padding: 10px;
   width: 450px;
   max-width: 80vw;
   margin-left: 10vw;
@@ -682,7 +682,7 @@
   display: none;
 }
 
-.projects .project-card:hover,
+/* .projects .project-card:hover,
 .projects .project-card:focus {
   background: #000;
 }
@@ -709,8 +709,10 @@
   color:white;
 }
 
-.projects .project-card:hover .dec a,
-.projects .project-card:focus .dec a {
+*/
+
+.btn-project a {
+  display: inline-block;
   padding: 10px;
   text-decoration: none;
   cursor: pointer;
@@ -718,6 +720,11 @@
   font-weight: 700;
   background: white;
   border-radius: 3px;
+  margin: 0 5px 20px 5px;
+} 
+
+.btn-project a:hover{
+  font-size: 1.4rem;
 }
 
 .footer {
@@ -986,8 +993,8 @@ border-color: #125688;
 
 .title-project{
   text-align: center;
-  margin: 10px 0;
-  font-size: 1.2rem;
+  margin: 20px 0 0 0;
+  font-size: 1.4rem;
 }
 
 .not-hover:hover{
