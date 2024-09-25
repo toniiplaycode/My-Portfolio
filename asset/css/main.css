@@ -796,6 +796,17 @@ a:hover{
   padding: 10px;
 }
 
+
+@media only screen and (max-width: 800px) {
+  a:active{
+    color: #E8CD26;
+    border-bottom: 2px solid #E8CD26;
+    border-top: 2px solid #E8CD26;
+    padding: 10px;
+  }
+}
+
+
 #small-screen-nav{
   position: fixed;
   width: 90%;
@@ -847,7 +858,6 @@ h1{
   vertical-align: middle;
   font-size: 26px;
   color: rgba(255,255,255,0.8);
-  text-decoration: underline;
 }
 
 h1 span{
@@ -986,3 +996,4 @@ border-color: #125688;
 .not-hover:hover{
   pointer-events: none;
 }
+
